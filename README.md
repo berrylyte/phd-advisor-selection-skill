@@ -99,19 +99,24 @@ User Input → Claude (Intelligent Flow Manager)
                                                        +tracker.md
 ```
 
-## Known Issues & v0.1 Testing Results
+## Release Notes
 
-### v0.1 Test Summary (2026-05-23)
-- ✅ Stages 1-4 walk-through successful
-- ✅ Data persistence working (progress.md generation)
-- ✅ **Issue #1 (FIXED)**: Added interaction checkpoint after Stage 3A search
-- ✅ **Issue #2 (FIXED)**: Stage 4 outreach now uses parallel strategy for different institutions
-- ✅ **Issue #3 (FIXED)**: Systematic venue-scanning implemented to generate 15-30 candidates across tiers
+### v0.2 (2026-05-23)
+**Improvements**:
+- ✅ Stage 3A: Added interaction checkpoint for candidate review
+- ✅ Stage 4: Implemented parallel outreach strategy (simultaneous contact for different institutions)
+- ✅ Stage 3: Systematic venue-based advisor discovery (target 15-30 candidates, adaptive to research direction)
 
-**v0.2 Implementation (2026-05-23)**:
-- ✅ Add Stage 3A pause point: "Would you like me to explain candidates before continuing?"
-- ✅ Implement parallel outreach strategy for different institutions
-- ✅ Systematic venue-scanning to generate 15-30 candidates (5-10 per tier), adaptive to user's research direction
+**Verification**: Tested and verified against v0.1 test feedback
+
+### v0.1 (2026-05-23)  
+**Initial Release Features**:
+- Complete 5-stage structured decision workflow
+- Persistent progress tracking (progress.md)
+- Advisor pool search with web discovery and data collection
+- Email outreach management and tracking
+
+**v0.1 Testing**: Identified 3 critical issues (all resolved in v0.2).
 
 ## Contributing
 
