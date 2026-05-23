@@ -1,0 +1,57 @@
+name: phd-advisor-selection
+version: 0.1.0
+description: "Claude-driven multi-stage skill to help students select PhD advisors through structured decision-making"
+
+author:
+  name: "Your Name"
+  email: "your-email@example.com"
+
+trigger:
+  keywords:
+    - "phd advisor"
+    - "choose phd"
+    - "phd selection"
+    - "advisor choice"
+    - "phd application"
+
+stages:
+  1:
+    name: "Self-Assessment"
+    description: "Clarify core needs, constraints, and mindset"
+    duration_minutes: "15-20"
+
+  2:
+    name: "Research Direction"
+    description: "Identify research interests from background"
+    duration_minutes: "10-15"
+
+  3:
+    name: "Advisor Pool Search"
+    description: "Find advisors, collect data, prioritize candidates"
+    duration_minutes: "30-45"
+
+  4:
+    name: "Email Outreach & Tracking"
+    description: "Manage advisor contact timeline"
+    duration_minutes: "20-30"
+
+  5:
+    name: "Offer Evaluation"
+    description: "Compare offers and make final decision"
+    duration_minutes: "20-30"
+
+features:
+  - flexible_entry: "User can start at any stage"
+  - persistent_progress: "progress.md carries across sessions"
+  - data_driven: "Concrete metrics vs abstract questions"
+  - dual_route_search: "Academic route + job board search"
+  - fallback_handling: "Auto-collection with manual URL fallback"
+
+tools_required:
+  - web_search
+  - data_collection
+  - file_persistence
+  - markdown_generation
+
+status: "MVP - Alpha Testing"
+github_repo: "https://github.com/yourusername/phd-advisor-selection-skill"

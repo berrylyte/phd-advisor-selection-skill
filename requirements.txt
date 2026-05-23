@@ -1,0 +1,23 @@
+# PhD Advisor Selection Skill Requirements
+
+# Core dependencies
+python>=3.9
+
+# Claude API
+anthropic>=0.7.0
+
+# Web scraping (for future full implementation)
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+selenium>=4.10.0  # For JavaScript-heavy sites
+
+# Data processing
+pandas>=2.0.0
+markdown>=3.4.0
+
+# Development & testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# Utilities
+python-dotenv>=1.0.0
