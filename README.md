@@ -24,7 +24,7 @@ This skill guides students through:
 
 ```bash
 # Installation
-git clone https://github.com/yourusername/phd-advisor-selection-skill.git
+git clone https://github.com/berrylyte/phd-advisor-selection-skill.git
 cd phd-advisor-selection-skill
 pip install -r requirements.txt
 
