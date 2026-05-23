@@ -139,9 +139,19 @@ You are now in Stage 3: Advisor Pool Search & Collection.
 
 This is the most detailed stage. It has 4 substages:
 
-**Substage 3A: Find Candidates**
-- Call search_advisors(keywords, region)
-- Get list of ~50-100 potential advisors
+**Substage 3A: Find Candidates (Systematic Venue-Based Approach)**
+- Based on Stage 2 research direction and keywords, identify relevant top venues ADAPTIVELY:
+  * Different fields have different primary venues (e.g., LLM inference → ASPLOS/ICLR/MLSys; vision → CVPR/ICCV; systems → OSDI/SOSP)
+  * Recommend venues to user for confirmation, then scan them systematically
+  * Time range: last 3-5 years (or 3 years if too many papers)
+- For each confirmed venue, search all papers matching user's keywords
+- Extract faculty authors from papers, filter to faculty only (exclude students/postdocs)
+- Map each faculty to their institution
+- Continue until you have 15-30 candidates distributed across:
+  * Tier 1 (best match): 5-10 advisors
+  * Tier 2 (good match): 5-10 advisors
+  * Tier 3 (acceptable match): 5-10 advisors
+- PAUSE after finding candidates and ask user: "I found [N] candidate advisors. Would you like me to explain each one, or continue with data collection?"
 
 **Substage 3B: Collect Data**
 - Call collect_advisor_info(advisor_names)
@@ -159,7 +169,7 @@ This is the most detailed stage. It has 4 substages:
 
 **Substage 3D: Prioritize & Shortlist**
 - Ask user: "Which of these dimensions matter most to YOUR decision?"
-- Help them select 5-10 advisors they want to contact
+- Help them select 5-10 advisors they want to contact (best from each tier)
 - Output: Ranked shortlist
 
 Guide the user through these substages sequentially.

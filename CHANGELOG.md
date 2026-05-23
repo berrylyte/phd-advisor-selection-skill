@@ -1,6 +1,6 @@
 # Changelog
 
-## [v1.0.0] - 2026-05-
+## [v0.2.0] - 2026-05-24
 
 ### Status
 **MVP - Alpha**
@@ -23,28 +23,28 @@ Early stage release with core functionality working. Stage 1-4 flows are impleme
 
 Test identified 3 critical issues (detailed below). All other flows working as expected.
 
-### Known Issues (v1)
+### Known Issues (v0.1)
 
-#### 🔴 Critical Issues (Will Fix in v2)
+#### 🔴 Critical Issues (Fixed in v0.2)
 
 **Issue #1: Missing Stage 3A Interaction Checkpoint**
 - Problem: After searching for candidates, the skill should pause to let user review findings before expanding search
 - Impact: User may not understand search scope or have proper control over process
-- Planned Fix: v2
+- Planned Fix: v0.2
 
 **Issue #2: Stage 4 Outreach Strategy Should Be Parallel**
 - Problem: Current design suggests sequential outreach (email advisor A → wait → email advisor B if no response)
 - Should Be: Simultaneously email different institutions (only stagger same-institution contacts by 1-2 weeks)
 - Impact: Unnecessarily extends timeline by 1-2 months
-- Planned Fix: v2
+- Planned Fix: v0.2
 
 **Issue #3: Candidate Pool Generation Needs Expansion**
 - Problem: Current implementation finds limited candidates; should systematically scan academic venues for 15-30 qualified advisors
 - Should Be: Adaptive venue-scanning based on user's research direction (different fields → different venues)
 - Impact: Limited optionality in advisor selection
-- Planned Fix: v2
+- Planned Fix: v0.2
 
-### v2 Roadmap
+### v0.2 Roadmap (Completed)
 - [ ] Implement Issue #1: Add interaction checkpoint after search
 - [ ] Implement Issue #2: Parallel outreach strategy with proper timing rules
 - [ ] Implement Issue #3: Systematic advisor discovery (adaptive to research direction)

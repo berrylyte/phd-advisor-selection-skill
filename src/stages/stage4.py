@@ -31,10 +31,12 @@ Stage 4: Email Outreach & Tracking
 1. Help user sequence emails by priority (from Stage 3 shortlist)
 2. Provide email template scaffold
 3. Track each email: date sent, advisor, priority, follow-up deadline
-4. Enforce timing rules:
-   - Same school, same dept: wait 1-2 weeks before emailing next advisor
-   - Different schools/depts: can email simultaneously
+4. **CRITICAL TIMING RULE** - Parallel Outreach Strategy:
+   - DIFFERENT institutions: Email SIMULTANEOUSLY (no delay)
+   - SAME institution, DIFFERENT departments: Can email simultaneously
+   - SAME institution, SAME department: Stagger by 1-2 weeks (avoid overwhelming single department)
    - One email per advisor only (no second round)
+   - IMPORTANT: Do NOT wait for one advisor's response before emailing others from different schools
 
 5. Call update_tracker(action, details) to log each action:
    - send_email: {advisor, school, date, subject}
@@ -72,10 +74,10 @@ Best regards,
     def _get_tracking_rules(self) -> Dict:
         return {
             "same_school_same_dept_delay": "1-2 weeks",
-            "different_school_delay": "none",
+            "different_school_delay": "none (email simultaneously)",
             "follow_up_window": "1-2 weeks",
             "max_emails_per_advisor": 1,
-            "critical_rule": "DO NOT email multiple advisors in same dept same time without checking!"
+            "critical_rule": "PARALLEL OUTREACH: Email different institutions simultaneously. Only stagger same-institution same-department contacts (1-2 weeks apart). Do NOT wait for response from one institution before emailing another."
         }
 
     def log_email(self, advisor_name: str, school: str, status: str = "sent") -> bool:

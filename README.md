@@ -104,14 +104,14 @@ User Input → Claude (Intelligent Flow Manager)
 ### v1 Test Summary (2026-05)
 - ✅ Stages 1-4 walk-through successful
 - ✅ Data persistence working (progress.md generation)
-- ⚠️ **Critical Issue #1**: Missing interaction checkpoint after Stage 3A search
-- ⚠️ **Critical Issue #2**: Stage 4 outreach strategy should be parallel (not sequential)
-- ⚠️ **Critical Issue #3**: Candidate pool too small (3 vs 15-30 target per tier)
+- ✅ **Issue #1 (FIXED)**: Added interaction checkpoint after Stage 3A search
+- ✅ **Issue #2 (FIXED)**: Stage 4 outreach now uses parallel strategy for different institutions
+- ✅ **Issue #3 (FIXED)**: Systematic venue-scanning implemented to generate 15-30 candidates across tiers
 
-**Priority Fixes (v2)**:
-- [ ] Add Stage 3A pause point: "Would you like me to explain candidates before continuing?"
-- [ ] Implement parallel outreach strategy for different institutions
-- [ ] Systematic venue-scanning to generate 15-30 candidates (5-10 per tier), adaptive to user's research direction
+**v2 Implementation (2026-05-24)**:
+- [x] Add Stage 3A pause point: "Would you like me to explain candidates before continuing?"
+- [x] Implement parallel outreach strategy for different institutions
+- [x] Systematic venue-scanning to generate 15-30 candidates (5-10 per tier), adaptive to user's research direction
 
 ## Contributing
 
@@ -119,4 +119,4 @@ Feedback and contributions welcome! This is in active development.
 
 ---
 
-**Status**: MVP v1 - Post-testing, improvements scheduled (2026-05)
+**Status**: v2 - Core fixes applied, testing and refinement in progress

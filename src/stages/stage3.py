@@ -40,14 +40,19 @@ class Stage3Handler:
 Stage 3: Advisor Pool Search & Collection
 
 Substages:
-- 3A: Find advisor candidates (journals + job boards)
+- 3A: Find candidates (systematic venue scanning, target 15-30 advisors across tiers)
 - 3B: Collect advisor info (auto + fallback)
 - 3C: Organize data, confirm with user
 - 3D: Prioritize based on user criteria
 
 **For Claude**:
-1. Substage 3A: Call search_advisors(keywords, region)
-   → Get list of candidate advisors
+1. Substage 3A: Systematic Candidate Discovery
+   - Based on Stage 2 keywords, recommend relevant top venues (ADAPT to field, not hardcoded)
+   - Call search_advisors(keywords, region) to find 15-30 candidates across Tier 1/2/3
+   - PAUSE and ask user: "I found [N] candidate advisors across [Tier breakdown].
+     Would you like me to explain each one before we continue to collect detailed information,
+     or shall I proceed with data collection?"
+   - Wait for user response before moving to 3B
 
 2. Substage 3B: Call collect_advisor_info(names)
    → Auto-collect with fallback URLs for missing data

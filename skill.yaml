@@ -53,5 +53,5 @@ tools_required:
   - file_persistence
   - markdown_generation
 
-status: "MVP - v1 (Post-testing, Issues Identified)"
+status: "MVP - v0.2 (Core fixes applied, testing in progress)"
 github_repo: "https://github.com/berrylyte/phd-advisor-selection-skill"
