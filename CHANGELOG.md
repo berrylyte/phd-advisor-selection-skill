@@ -1,11 +1,11 @@
 # Changelog
 
-## [v1.0.0] - 2026-05-23
+## [v1.0.0] - 2026-05-
 
 ### Status
-**MVP - Post-Testing (Alpha)**
+**MVP - Alpha**
 
-First complete end-to-end test cycle completed with real user. Code is functional but has known issues that need fixing in v2.
+Early stage release with core functionality working. Stage 1-4 flows are implemented and functional. 
 
 ### What's New
 - ✅ Complete Stage 1-4 flow implementation
@@ -16,74 +16,59 @@ First complete end-to-end test cycle completed with real user. Code is functiona
 
 ### Known Issues (v1)
 
-#### 🔴 Critical Issues (v2 Priority)
+#### 🔴 Critical Issues (Will Fix in v2)
 
 **Issue #1: Missing Stage 3A Interaction Checkpoint**
-- After searching for candidates, skill should pause and ask user if they want to review findings before continuing
-- Impact: User loses sense of control over search process
-- Status: Not fixed in v1
-- Fix planned: v2
+- Problem: After searching for candidates, the skill should pause to let user review findings before expanding search
+- Impact: User may not understand search scope or have proper control over process
+- Planned Fix: v2
 
-**Issue #2: Stage 4 Outreach Strategy is Sequential (Should Be Parallel)**
-- Current: Suggests emailing advisors one-by-one (Tim first, then Song if Tim fails)
-- Should be: Email different institutions simultaneously (only same school/dept needs 1-2 week delay)
-- Impact: Wastes 1-2 months of application timeline
-- Status: Not fixed in v1
-- Fix planned: v2
+**Issue #2: Stage 4 Outreach Strategy Should Be Parallel**
+- Problem: Current design suggests sequential outreach (email advisor A → wait → email advisor B if no response)
+- Should Be: Simultaneously email different institutions (only stagger same-institution contacts by 1-2 weeks)
+- Impact: Unnecessarily extends timeline by 1-2 months
+- Planned Fix: v2
 
-**Issue #3: Candidate Pool Too Small**
-- Current: Only 3 candidates total
-- Should be: 15-30 candidates (5-10 per tier: Tier 1/2/3)
-- Method: Systematic venue-scanning (ASPLOS, ICLR, MLSys, etc.) adaptive to user's research direction
-- Impact: High risk if primary choice not available
-- Status: Not fixed in v1
-- Fix planned: v2
+**Issue #3: Candidate Pool Generation Needs Expansion**
+- Problem: Current implementation finds limited candidates; should systematically scan academic venues for 15-30 qualified advisors
+- Should Be: Adaptive venue-scanning based on user's research direction (different fields → different venues)
+- Impact: Limited optionality in advisor selection
+- Planned Fix: v2
 
-### Test Results
-
-**Test Date**: 2026-05-23  
-**Test Subject**: Graduate student, EE background, CVPR + INFOCOM publications  
-**Test Method**: Complete Stage 1-4 walk-through with real background and research interests  
-**Result**: 3.5/5 overall satisfaction
-
-**Detailed Feedback**: See `TEST_FEEDBACK_v1.md` and MyVault project directory
+### v2 Roadmap
+- [ ] Implement Issue #1: Add interaction checkpoint after search
+- [ ] Implement Issue #2: Parallel outreach strategy with proper timing rules
+- [ ] Implement Issue #3: Systematic advisor discovery (adaptive to research direction)
+- [ ] Additional testing and refinement
+- [ ] Integration testing with Claude Code
 
 ### Breaking Changes
 None (first release)
 
-### Deprecated
-None (first release)
-
 ### Security
-- No sensitive credentials in code ✓
-- Placeholder author/email updated ✓
-- All file paths use environment variable configuration ✓
-
-### Docs
-- Updated skill.yaml with correct author and GitHub repo
-- Added known issues to README.md
-- Added TODO comments to core.py for issue tracking
-- Created this CHANGELOG
-
-### Next Steps (v2 Roadmap)
-- [ ] Implement Issue #1: Add Stage 3A pause point
-- [ ] Implement Issue #2: Parallel outreach strategy
-- [ ] Implement Issue #3: Systematic candidate pool generation (15-30 candidates)
-- [ ] Small-group testing (3-5 users)
-- [ ] Integration testing with Claude Code
-- [ ] Performance optimization
-
-### Contributors
-- @berrylyte - Initial MVP development and testing
+- ✓ No hardcoded credentials or sensitive data
+- ✓ Proper use of environment variables for configuration
+- ✓ All test artifacts properly gitignored
 
 ---
 
 ## How to Report Issues
 
-Found a bug or have feedback? 
-1. Create an issue on GitHub
-2. Include your research direction and background
-3. Describe what stage/step failed
-4. Expected vs actual behavior
+Found a problem or have feedback?
 
-Thank you for testing! 🎓
+1. **Create an issue on GitHub** with:
+   - Your research direction/field
+   - Which stage the issue occurred
+   - What you expected vs what happened
+   - Steps to reproduce (if applicable)
+
+2. **Or suggest improvements** if you have ideas for:
+   - Better search strategies
+   - Improved advisor comparison dimensions
+   - Clearer guidance at any stage
+
+All feedback is valuable as this skill continues development.
+
+---
+
+**Last Updated**: 2026-05
