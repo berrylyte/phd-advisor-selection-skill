@@ -3,8 +3,8 @@ version: 0.1.0
 description: "Claude-driven multi-stage skill to help students select PhD advisors through structured decision-making"
 
 author:
-  name: "Your Name"
-  email: "your-email@example.com"
+  name: "berrylyte"
+  email: "palebluee52@gmail.com"
 
 trigger:
   keywords:
@@ -53,5 +53,5 @@ tools_required:
   - file_persistence
   - markdown_generation
 
-status: "MVP - Alpha Testing"
-github_repo: "https://github.com/yourusername/phd-advisor-selection-skill"
+status: "MVP - v1 (Post-testing, Issues Identified)"
+github_repo: "https://github.com/berrylyte/phd-advisor-selection-skill"

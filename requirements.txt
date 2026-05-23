@@ -1,8 +1,5 @@
 # PhD Advisor Selection Skill Requirements
 
-# Core dependencies
-python>=3.9
-
 # Claude API
 anthropic>=0.7.0
 

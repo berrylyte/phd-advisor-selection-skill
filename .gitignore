@@ -3,6 +3,12 @@ data/
 progress_*.json
 progress_*.md
 tracker_*.md
+test_env/
+test_data/
+run_test.py
+
+# Local development files
+.claude/
 
 # Python
 __pycache__/

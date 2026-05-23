@@ -99,11 +99,27 @@ User Input → Claude (Intelligent Flow Manager)
                                                        +tracker.md
 ```
 
+## Known Issues & v1 Testing Results
+
+### v1 Test Summary (2026-05)
+- ✅ Stages 1-4 walk-through successful
+- ✅ Data persistence working (progress.md generation)
+- ⚠️ **Critical Issue #1**: Missing interaction checkpoint after Stage 3A search
+- ⚠️ **Critical Issue #2**: Stage 4 outreach strategy should be parallel (not sequential)
+- ⚠️ **Critical Issue #3**: Candidate pool too small (3 vs 15-30 target per tier)
+
+**Priority Fixes (v2)**:
+- [ ] Add Stage 3A pause point: "Would you like me to explain candidates before continuing?"
+- [ ] Implement parallel outreach strategy for different institutions
+- [ ] Systematic venue-scanning to generate 15-30 candidates (5-10 per tier), adaptive to user's research direction
+
+See [TEST_FEEDBACK_v1.md](../../../MyVault/Projects/PhD-Advisor-Selection-Skill/TEST_FEEDBACK_v1.md) for detailed feedback.
+
 ## Next Steps
 
-- [ ] MVP local testing (all 5 stages basic version)
-- [ ] Small-group user testing
-- [ ] Feedback iteration
+- [x] v1 local testing completed
+- [ ] Implement v2 improvements (parallel outreach, larger candidate pool)
+- [ ] Small-group user testing  
 - [ ] Deploy to GitHub
 - [ ] Integration with Claude Code
 
@@ -113,4 +129,4 @@ Feedback and contributions welcome! This is in active development.
 
 ---
 
-**Status**: MVP in development (2026-05)
+**Status**: MVP v1 - Post-testing, improvements scheduled (2026-05)

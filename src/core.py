@@ -271,12 +271,14 @@ See separate tracker file.
 
 # ==================== Skill Entry Point ====================
 
-def create_skill_context(user_id: str) -> Dict:
+def create_skill_context(user_id: str, data_dir: Optional[str] = None) -> Dict:
     """
     Create skill context for Claude to use
     This is what Claude receives and can interact with
     """
-    skill = PhDAdvisorSkill(user_id)
+    if data_dir is None:
+        data_dir = os.environ.get("ADVISOR_DATA_PATH", "./data")
+    skill = PhDAdvisorSkill(user_id, data_dir=data_dir)
 
     return {
         "skill_name": "PhD Advisor Selection",
