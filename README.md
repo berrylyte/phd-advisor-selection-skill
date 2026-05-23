@@ -99,19 +99,19 @@ User Input → Claude (Intelligent Flow Manager)
                                                        +tracker.md
 ```
 
-## Known Issues & v1 Testing Results
+## Known Issues & v0.1 Testing Results
 
-### v1 Test Summary (2026-05)
+### v0.1 Test Summary (2026-05-23)
 - ✅ Stages 1-4 walk-through successful
 - ✅ Data persistence working (progress.md generation)
 - ✅ **Issue #1 (FIXED)**: Added interaction checkpoint after Stage 3A search
 - ✅ **Issue #2 (FIXED)**: Stage 4 outreach now uses parallel strategy for different institutions
 - ✅ **Issue #3 (FIXED)**: Systematic venue-scanning implemented to generate 15-30 candidates across tiers
 
-**v2 Implementation (2026-05-24)**:
-- [x] Add Stage 3A pause point: "Would you like me to explain candidates before continuing?"
-- [x] Implement parallel outreach strategy for different institutions
-- [x] Systematic venue-scanning to generate 15-30 candidates (5-10 per tier), adaptive to user's research direction
+**v0.2 Implementation (2026-05-23)**:
+- ✅ Add Stage 3A pause point: "Would you like me to explain candidates before continuing?"
+- ✅ Implement parallel outreach strategy for different institutions
+- ✅ Systematic venue-scanning to generate 15-30 candidates (5-10 per tier), adaptive to user's research direction
 
 ## Contributing
 
@@ -119,4 +119,4 @@ Feedback and contributions welcome! This is in active development.
 
 ---
 
-**Status**: v2 - Core fixes applied, testing and refinement in progress
+**Status**: v0.2 - Core fixes applied, testing and refinement in progress
