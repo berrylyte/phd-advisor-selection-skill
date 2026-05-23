@@ -113,16 +113,6 @@ User Input → Claude (Intelligent Flow Manager)
 - [ ] Implement parallel outreach strategy for different institutions
 - [ ] Systematic venue-scanning to generate 15-30 candidates (5-10 per tier), adaptive to user's research direction
 
-See [TEST_FEEDBACK_v1.md](../../../MyVault/Projects/PhD-Advisor-Selection-Skill/TEST_FEEDBACK_v1.md) for detailed feedback.
-
-## Next Steps
-
-- [x] v1 local testing completed
-- [ ] Implement v2 improvements (parallel outreach, larger candidate pool)
-- [ ] Small-group user testing  
-- [ ] Deploy to GitHub
-- [ ] Integration with Claude Code
-
 ## Contributing
 
 Feedback and contributions welcome! This is in active development.
